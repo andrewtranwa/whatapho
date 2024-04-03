@@ -1,0 +1,167 @@
+/* global variables */
+:root { /* variables that will be reused throughout the CSS file */
+    --black: #000;
+    --white: #fff;
+    --red: #ff0000;
+    --gray: grey;
+
+}
+
+/* for website body (everything except for header) need to keep or the padding will be weird */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    background-color: var(--white);
+}
+/* "what a pho" main title */
+h1 {
+    font-size: 60px;
+}
+/* contact us and menu text headings */
+h2 {
+    font-size: 55px;
+}
+/* menu text headings */
+h3 {
+    font-size: 50px;
+}
+
+/* header section */
+header { /* header */
+    background-color: #f8d7da;
+    text-align: center;
+    padding: 10px 0;
+}
+header nav ul { /* header unordered list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li { /* header unordered list item */
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+}
+header nav ul li a { /* header unordered list item font and color */
+    text-decoration: none;
+    color: var(--black);
+    font-size: 22px;
+}
+
+/* hero section */
+#hero { 
+    position: relative;
+    text-align: center;
+    color: white; /* Ensures text is white for better visibility */
+}
+#hero img {
+    width: 100%; /* Ensures the image covers the full width of the section */
+    height: auto; /* Maintains aspect ratio */
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#weather, #dish {
+    margin: 10px 0; /* Adjust spacing as needed */
+    font-size: 22px; /* Adjust font size as needed for readability */
+    max-width: 80%; /* Constrain text width for aesthetics */
+    text-align: center;
+}
+#hero #order-online {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #E53E3E; /* A red tone, adjust based on your design */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase; /* Optional: makes the button text uppercase */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#hero #order-online:hover {
+    background-color: #C53030; /* Darker shade of red on hover */
+}
+
+
+/* contact information section */
+#info {
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+.contact {
+    font-size: 25px;
+    color: var(--black);
+}
+
+/* menu header clickable */
+#menu {
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+#menu nav ul { /* menu unordered list */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+#menu nav ul li { /* menu unordered list item */
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+}
+/* highlights red whatever section of the menu you're on */
+#menu nav ul li.active {
+    color: var(--red);
+    font-weight: bold;
+}
+#menu { 
+    position: relative;
+    text-align: center;
+    color: black; 
+}
+/* menu items after click to display */
+img {
+    width: 50%; 
+    height: 50%; 
+}
+
+
+.food {
+    font-size: 40px;
+    color: var(--black);
+}
+.description {
+    text-align: center; 
+    clear: both;
+    font-family: opensans;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--black);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}

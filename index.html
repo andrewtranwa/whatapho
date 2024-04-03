@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>What A Pho</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<!-- header section -->
+<body>
+    <header>
+        <h1>What A Pho</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#info">Contact Us</a></li>
+                <li><a href="#menu">Menus</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- hero/order online section -->
+    <section id="hero">
+        <img src="whatapho.png" alt="What A Pho Restaurant">
+        <div id="overlay">
+            <div id="weather">Loading weather...</div>
+            <div id="dish">Loading recommendation...</div>
+            <button id="order-online">Order Online</button>
+        </div>
+    </section>
+<!-- contact us section -->
+    <section id="info">
+        <h2>Contact Us</h2>
+        <p class = contact><strong>Phone:</strong> 360 933 4182 </p>
+        <p class = contact><strong>Address:</strong> 3212 Northwest Ave, Bellingham, WA 98225 </p>
+        <p class = contact><strong>Hours:</strong> Monday - Saturday: 11 am - 8 pm</p>
+    </section>
+<!-- menu items to click section -->
+    <section id="menu">
+        <h2>Our Full Menu</h2>
+        <nav>
+            <ul>
+                <li onclick="showMenu('pho')">Phở</li>
+                <li onclick="showMenu('banhmi')">Bánh Mi</li>
+                <li onclick="showMenu('rice')">Rice</li>
+                <li onclick="showMenu('soups')">Soups</li>
+                <li onclick="showMenu('drinks')">Drinks</li>
+            </ul>
+        </nav>
+ <!-- popup menu section -->
+<div id="menuContent">
+    <!-- Phos Section -->
+    <div id="pho" class="menu-category">
+        <h3>Phở</h3>
+        <!-- List of Phos -->
+        <div id="pho-tai-bo-vien">
+            <p class = food>Phở tái bộ viên</p>
+            <p class = "description">Dive into the depths of Vietnamese culinary tradition with our Phở Tái Bò Viên. This beloved beef noodle soup combines the best of both worlds: thinly sliced rare beef (Tái), and hearty beef meatballs (Bò Viên). All these elements are delicately placed in a steaming, aromatic beef broth that's rich in flavor, alongside flat rice noodles. Garnished with fresh green onions, cilantro, and white onions, each spoonful is a burst of freshness and depth. To enhance your dining experience, we serve it with classic sides like basil, lime wedges, bean sprouts, and sliced jalapenos, allowing you to tailor the taste to your liking. Savor this exquisite blend of textures and flavors in our warm, authentic Vietnamese eatery setting.</p>
+            <img src = "photai.png" alt="phở tái bộ viên"> 
+        </div>
+        <div id="veggie-pho">
+            <p class = food>Veggie phở</p>
+            <p class = "description">Delight in the wholesome goodness of our Veggie Pho, a vegetarian twist on the classic Vietnamese noodle soup. Immerse yourself in a bowl full of rich, aromatic vegetable broth, teeming with soft rice noodles and an assortment of fresh, vibrant vegetables like tender broccoli, crisp carrots, earthy mushrooms, and protein-rich tofu. Each spoonful is a celebration of flavors, garnished with a sprinkle of green onions, fresh cilantro, and crunchy bean sprouts. To further enhance your dining experience, we offer sides of zesty lime wedges, fragrant basil, and spicy chili sauce, giving you the freedom to tailor the dish to your palate. Perfect for vegetarians and health-conscious diners alike, this dish is a testament to the versatility and depth of Vietnamese cuisine, served in a cozy, inviting restaurant atmosphere.</p>
+            <img src = "veggiepho.png" alt="Veggie Pho"> 
+        </div>
+        <div id="pho-ga">
+            <p class = food>Phở gà</p>
+            <p class = "description">Indulge in the comforting flavors of our Pho Ga, a quintessential Vietnamese chicken noodle soup. This heartwarming dish presents a generous bowl of crystal-clear, flavorsome chicken broth, brimming with tender rice noodles and succulent slices of chicken. Garnished with a scattering of green onions, fragrant cilantro, and delicate onion slices, it brings a burst of freshness to each spoonful. Accompanied by a side plate of aromatic basil leaves, crisp bean sprouts, tangy lime wedges, and spicy sliced jalapenos, you have the option to customize your soup to your own taste preferences. Served in a traditional Vietnamese eatery setting, our Pho Ga is not just a meal, but an experience that encapsulates the soul of Vietnamese cooking.</p>
+            <img src = "phoga.png" alt="Pho Ga"> 
+        </div>
+        <div id="pho-bo">
+            <p class = food>Pho Bo</p>
+            <p class = "description">need pho bo description</p>
+            <img src = "phobo.png" alt="Pho Bo"> 
+        </div>
+        <div id="pho-dac-biet">
+            <p class = food>Pho Dac Biet</p>
+            <p class = "description">need pho dac biet description</p>
+            <img src = "phodb.png" alt="Pho Dac Biet"> 
+        </div>
+    </div>
+    <!-- Banh Mi Section -->
+    <div id="banhmi" class="menu-category" style="display: none;">
+        <h3>Bánh Mi</h3>
+        <!-- List of Banh Mi -->
+        <div id="banh-mi-thit-nuong">
+            <p class = food>bánh mì thịt nướng</p>
+            <p class = "description">Experience the flavors of Vietnam with our Bánh Mì Thịt Nướng. This sandwich is a delightful blend of textures and tastes, featuring a crusty, freshly baked baguette filled with savory grilled pork. The pork, marinated in a medley of Vietnamese spices, is both tender and richly flavored. Alongside the pork, you'll find a colorful array of pickled carrots and daikon, adding a tangy crunch, along with crisp cucumber slices and fresh cilantro. A light spread of mayonnaise adds a creamy touch to this classic Vietnamese sandwich. Cut in half to reveal the vibrant layers of ingredients, it's served on a wooden board, inviting you to savor every bite of this authentic street food delicacy.</p>
+            <img src = "banhmi.png" alt="bánh mì thịt nướng"> 
+        </div>
+    </div>
+    <!-- Rice Section -->
+    <div id="rice" class="menu-category" style="display: none;">
+        <h3>Rice</h3>
+        <!-- List of Rice Dishes -->
+        <div id="com-tam">
+            <p class = food>Cơm tấm</p>
+            <p class = "description">need Cơm tấm description </p>
+            <img src="comtam.png" alt="Cơm tấm">
+        </div>
+    </div>
+    <!-- Soups Section -->
+    <div id="soups" class="menu-category" style="display: none;">
+        <h3>Soups</h3>
+        <!-- List of Soups -->
+        <div id="bun-bo-hue">
+            <p class = food>Bún bò Huế</p>
+            <p class= "description">Embrace the vibrant essence of Central Vietnam with our authentic Bún bò Huế. This hearty soup boasts a lemongrass-infused broth, enriched with chili oil for a gentle heat. Dive into a bowl filled with succulent beef shank, oxtail, and pig's knuckles, swimming alongside thick rice noodles. Topped with delicate slices of red onion, fragrant cilantro, and green onions, it's a feast for the senses. Served with a side platter of fresh basil, mint, lime wedges, and chili to tailor to your taste. A bold and spicy adventure in every spoonful.</p>
+            <img src="bbh.png" alt="Bún bò Huế">
+        </div>
+        <div id="hu-tieu-mi-thap-cam">
+            <p class = food>hủ tiếu mì thập cẩm</p>
+            <p class = "description">Embark on a culinary journey with our Hủ Tiếu Mì Thập Cẩm, a dish that celebrates the diversity of Vietnamese flavors. This mixed noodle soup combines the delicate textures of thin rice noodles (Hủ Tiếu) and hearty wheat noodles (Mì) in a rich, clear broth. Each bowl is adorned with an array of toppings: tender slices of pork, succulent shrimp, savory quail eggs, and slices of fish cake, creating a medley of tastes in every bite. Garnished with fresh chives, crispy fried shallots, and a hint of black pepper, this soup is a true feast for the senses. Served with lime wedges and aromatic herbs on the side, it's a dish that brings the essence of Vietnam to your table. Enjoy this symphony of flavors in our cozy, inviting dining environment.</p>                    
+                <img src="hutieu.png" alt="Hủ tiếu mì thập cẩm"> 
+        </div>
+    </div>
+    <!-- Drinks Section -->
+    <div id="drinks" class="menu-category" style="display: none;">
+        <h3>Drinks</h3>
+        <!-- List of Drinks -->
+        <div id="ca-phe-sua-da">
+            <p class = food>Cà phê sữa đá</p>
+            <p class="description">Delve into the rich, aromatic world of Vietnam with our Cà Phê Sữa Đá. This traditional Vietnamese iced coffee is a testament to the art of coffee brewing. It features a bold, dark coffee, layered over sweetened condensed milk in a tall, clear glass, creating a visual and taste sensation. Served with ice cubes for a refreshing chill, this drink is ideal for savoring on warm days or as a delightful pick-me-up. Accompanied by a long spoon for the perfect blend, each sip offers a harmonious mix of strong coffee and creamy sweetness. Enjoy this iconic beverage in our inviting café, where each cup captures the essence of Vietnamese coffee culture.</p>
+            <img src = "coffee.png" alt="Cà phê sữa đá">
+        </div>
+        <div id="bubble-tea">
+            <p class = food>Bubble Tea</p>
+            <p class = "description">Indulge in the subtle elegance of our Creamy Milk Tea, a popular Asian beverage reimagined without the boba. Served in a tall, transparent glass, this drink showcases the rich, amber hue of expertly brewed tea, layered with a luxurious creamy top. The blend of milk and tea offers a perfect harmony of flavors – creamy yet not overpowering, allowing the natural tea notes to shine through. Accompanied by a thick straw, it's a modern twist on a beloved classic. Sip and savor this velvety smooth drink in our cozy, contemporary café setting, where simplicity meets sophistication.</p>
+            <img src = "bubbletea.png" alt="Bubble Tea">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>© [2023] What A Pho. All rights reserved.</p>
+    </footer>
+</body>
+</html>
